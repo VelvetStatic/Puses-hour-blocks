@@ -190,8 +190,83 @@ enum BlockDomain: String, Domain, CaseIterable {
     }
 }
 
+    /// The Norwegian translation of the suggestion title.
+    var suggestionTitleNO: String {
+        switch self {
+        case .wake: return "stå opp"
+        case .read: return "lese"
+        case .book: return "lese bok"
+        case .quran: return "lese koranen"
+        case .birthday: return "bursdag"
+        case .code: return "programmering"
+        case .commute: return "pendling"
+        case .home: return "dra hjem"
+        case .shopping: return "handle"
+        case .store: return "gå i butikken"
+        case .movie: return "se film"
+        case .work: return "jobb"
+        case .call: return "ringe"
+        case .email: return "e-post"
+        case .vote: return "stemme"
+        case .write: return "skrive"
+        case .draw: return "tegne"
+        case .swim: return "svømming"
+        case .game: return "spille"
+        case .tv: return "se på TV"
+        case .music: return "musikk"
+        case .guitar: return "gitar"
+        case .piano: return "piano"
+        case .paint: return "male"
+        case .design: return "design"
+        case .walk: return "gå en tur"
+        case .morning: return "morgenrutine"
+        case .navigate: return "navigere"
+        case .cycle: return "sykle"
+        case .drive: return "kjøre"
+        case .run: return "løpetur"
+        case .bus: return "ta bussen"
+        case .train: return "ta toget"
+        case .flight: return "fly"
+        case .love: return "tid med de kjære"
+        case .relax: return "slappe av"
+        case .sleep: return "sove"
+        case .nap: return "ta en blund"
+        case .party: return "fest"
+        case .coffee: return "ta en kaffe"
+        case .laundry: return "vaske klær"
+        case .meditate: return "meditere"
+        case .yoga: return "yoga"
+        case .eat: return "spise"
+        case .cook: return "lage mat"
+        case .breakfast: return "frokost"
+        case .lunch: return "lunsj"
+        case .dinner: return "middag"
+        case .pets: return "leke med kjæledyr"
+        case .exercise: return "trening"
+        case .gym: return "gå på treningssenter"
+        case .golf: return "golf"
+        case .competition: return "konkurranse"
+        case .meeting: return "møte"
+        case .school: return "skole"
+        case .lecture: return "forelesning"
+        case .study: return "studere"
+        case .homework: return "lekser"
+        case .exam: return "eksamen"
+        case .baseball: return "baseball"
+        case .basketball: return "basketball"
+        case .cricket: return "cricket"
+        case .hockey: return "hockey"
+        case .rugby: return "rugby"
+        case .football: return "fotball"
+        case .tennis: return "tennis"
+        case .volleyball: return "volleyball"
+        case .winter: return "vinter"
+        }
+    }
+}
+
 protocol Domain: Hashable {
-    
+
     var icon: SelectableIcon { get }
     var suggestionTitle: String { get }
 }
